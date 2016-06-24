@@ -11,8 +11,6 @@ var sass          = require('gulp-sass');
 var autoprefix    = require('gulp-autoprefixer');
 var cssnano       = require('gulp-cssnano');
 var jshint        = require('gulp-jshint');
-// var notify        = require("gulp-notify") 
-// var bower         = require('gulp-bower');
 
 var _project_dist = './dist/';
 var _jade_src     = './src/**/!(_)*.jade';
@@ -27,8 +25,6 @@ var _js_dest      = './dist/js/';
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-      //ghostMode: false,
-      //notify: false,
       reloadDelay: 1000,
        server: {
           baseDir: './dist'

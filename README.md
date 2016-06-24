@@ -1,18 +1,6 @@
 # Angela's Portfolio
 
-A repository created showing my portfolio code.
-
-## Installation
-
-You will need NPM, Gulp.js and Bower.
-
-Download Node.JS [here](http://nodejs.org/) for your OS. NPM comes with Node.JS
-
-Enter the following in your console when pointed at the project directory:
-
-    sudo npm install gulp -g
-    sudo npm install bower -g
-    sudo npm install
+A repository created showing the code for my portfolio site.
 
 ## Built With
 
