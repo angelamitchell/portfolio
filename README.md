@@ -1,6 +1,6 @@
 # Angela's Portfolio
 
-TODO: A repository created showing my portfolio code.
+A repository created showing my portfolio code.
 
 ## Installation
 
