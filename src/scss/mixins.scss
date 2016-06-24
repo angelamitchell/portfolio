@@ -1,0 +1,12 @@
+@mixin trans($val) {
+  transition: $val;
+}
+
+// Small devices (tablets, 768px and up)
+@mixin sm { @media (min-width: $screen-sm-min) { @content } }
+
+// Medium devices (desktops, 992px and up)
+@mixin md { @media (min-width: $screen-md-min) { @content } }
+
+// Large devices (large desktops, 1200px and up)
+@mixin lg { @media (min-width: $screen-lg-min) { @content } }

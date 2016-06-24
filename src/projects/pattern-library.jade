@@ -1,0 +1,55 @@
+doctype html
+include ../head/head.jade
+html.home
+  body
+    include ../nav/nav-interior.jade
+
+    .bg-purple
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              ol.breadcrumb
+                li: a(href="hard-rock.html") Hard Rock Hotels
+                li: a(href="money-morning.html") EverBank Money Morning
+              h1 EverBank Pattern Library
+              p.large.intro EverBank needed an internal site to house all of their patterns, styles and code.
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            p: em Role: Lead Designer &amp; Front-End Developer
+            h2 Process
+            p Initially, meetings were set to discuss requirements and standards for the pattern library. The information gathered from these meetings was used to create the information architecture for the site. I printed the assets from the three websites and organized them into piles (ex: various buttons would be in one pile).
+            p The printed assets helped me to write out each section on notecards. These notecards allowed us to easily move sections around. Once the architecture was set I researched and developed a prototype. Pattern libraries are simple in design in order to to make the components stand out.
+            p The pattern library was built using GitHub, Jade, Sass and Angular 2. I discovered Angular 2 was the perfect choice because there were many components to create. The components were organized by site and each component has an example, live example link and a code snippet.
+
+    .bg-lblue
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              h2 Process Visuals
+              p The visuals below are the notecards for the pages, information architecture and wireframe.
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' title='Notecards' href="../images/patternLibraryNotes.jpg")
+                img(src="../images/tPatternLibrary01.jpg")
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' title='Site Structure' href="../images/patternLibrarySitemap.jpg")
+                img(src="../images/tPatternLibrary03.jpg")
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href="../images/patternLibraryWireframe.jpg" title='UX Pin Wireframe')
+                img(src="../images/tPatternLibrary02.jpg")
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            h2 Final Product
+            p Before the pattern library the department experienced inconsistencies with their code and patterns. The pattern library is making our team more efficient and improving consistency in our designs.
+        .row
+          .col-md-8.col-md-offset-2
+            img.portfolio-img.width100(src='../images/pPatternLibrary.png')
+
+    include ../footer/footer.jade

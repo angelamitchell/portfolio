@@ -1,0 +1,201 @@
+@import 'colors';
+@import 'bootstrap/bootstrap';
+@import 'font-awesome/font-awesome';
+@import 'footer';
+@import 'mixins';
+@import 'nav';
+@import 'swipebox';
+@import 'https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro:300,400,400i,600';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  padding-top: 50px;
+
+  .container {
+    position: relative;
+  }
+}
+
+a {
+  color: $dblue;
+  cursor: pointer;
+  @include trans(.25s ease-in-out);
+
+  &.dark:hover {
+    color: $dblue;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $lblue;
+  }
+
+  &.thumbnail {
+    &.active,
+    &:focus,
+    &:hover {
+      border-color: $lpurple;
+    }
+
+    .bg-black {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      margin-top: 30px;
+
+      @include sm {
+        margin-top: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 30px;
+
+      @include md {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 4.5rem;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  color: $lblue;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.btn {
+  @include trans(.25s ease-in-out);
+  border-color: $dblue;
+
+  &:hover {
+    background-color: $lblue;
+  }
+}
+
+.work-life {
+  margin: 20px 0;
+
+  @include sm {
+    margin: 0;
+  }
+
+  @include lg {
+    margin: 0;
+  }
+}
+
+.pull-right-md {
+  @include sm {
+    float: right;
+  }
+
+  @include md {
+    float: right;
+  }
+}
+
+.breadcrumb {
+  background: transparent;
+  font-size: 1.6rem;
+  padding: 0;
+}
+
+.border {
+  background: $dblue;
+  height: 3px;
+  width: 10%;
+}
+
+.inner-content {
+  padding: 50px 5px;
+
+  @include lg {
+    padding: 50px 0;
+  }
+}
+
+.large {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+
+  &.intro {
+    margin: 0;
+  }
+}
+
+.about-section {
+  position: relative;
+
+  &:before {
+    @include sm {
+      background: url('../images/angelaItaly.jpg') center center;
+      background-size: cover;
+      bottom: 0;
+      content: '';
+      left: 0;
+      opacity: .15;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
+  }
+}
+
+.fa-ul {
+  margin-left: 2rem;
+
+  .fa-li {
+    color: $dblue;
+    font-size: 1.6rem;
+    top: .70rem;
+  }
+
+}
+
+.width100 {
+  width: 100%;
+}
+
+.portfolio-img {
+  margin-top: 20px;
+}

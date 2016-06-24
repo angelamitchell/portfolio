@@ -1,0 +1,35 @@
+$white: rgb(255, 255, 255);
+$black: rgb(17, 22, 37);
+$purple: rgb(52, 25, 49);
+$lpurple: rgb(87, 27, 60);
+$lblue: rgb(224, 239, 241);
+$dblue: rgb(125, 180, 181);
+
+.bg-black {
+  background: $black;
+}
+
+.bg-purple {
+  background: $purple;
+  color: $white;
+}
+
+.bg-lblue {
+  background: $lblue;
+}
+
+.bg-dblue {
+  background: $dblue;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}

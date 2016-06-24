@@ -1,0 +1,37 @@
+nav {
+  &.navbar {
+    background: $black;
+    border: 0;
+  }
+
+  a {
+    color: $lblue;
+    font-size: 1.6rem;
+  }
+
+  .navbar-toggle {
+    border: 1px solid $dblue;
+
+    .icon-bar {
+      background: $white;
+    }
+  }
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background: $lpurple;
+    color: $white;
+  }
+}
+
+.navbar-toggle {
+  margin-right: 20px;
+}
+
+.navbar-brand {
+  padding: 15px 20px;
+
+  &:hover {
+    color: $dblue;
+  }
+}

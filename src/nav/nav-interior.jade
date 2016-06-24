@@ -1,0 +1,14 @@
+nav.navbar.navbar-fixed-top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') Angela Mitchell
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.pull-right-md.pull-right-sm
+        li: a.scroll(href='/' data-toggle='collapse' data-target='.navbar-collapse.in') About
+        li: a.scroll(href='/' data-toggle='collapse' data-target='.navbar-collapse.in') Work
+        li: a.scroll(href='/images/amitchell-resume.pdf' data-toggle='collapse' data-target='.navbar-collapse.in' target='_blank') Résumé
