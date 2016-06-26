@@ -23,12 +23,18 @@ body {
   }
 }
 
+.no-padding-left {
+  padding-left: 0;
+}
+
 a {
   color: $dblue;
   cursor: pointer;
   @include trans(.25s ease-in-out);
 
-  &.dark:hover {
+  &.dark:hover,
+  &.dark:focus,
+  &.dark:active {
     color: $dblue;
   }
 
@@ -76,9 +82,14 @@ h2 {
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 4.5rem;
+  font-size: 4.5rem;
+  line-height: 4rem;
   margin: 0 0 20px;
+
+  @include sm {
+    font-size: 5rem;
+    line-height: 4.5rem;
+  }
 }
 
 h2 {
@@ -141,8 +152,12 @@ h5 {
 .inner-content {
   padding: 50px 5px;
 
+  @include md {
+    padding: 75px 0;
+  }
+
   @include lg {
-    padding: 50px 0;
+    padding: 75px 0;
   }
 }
 

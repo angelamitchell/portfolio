@@ -7,9 +7,9 @@ html.home
     .container
       .inner-content
         .row
-          .col-md-8.col-md-offset-2
+          .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
             h1 Your next confidently humble UI/UX designer
-            p.large I was so excited to hear about an opening for a UI/UX Designer at YNAB. Now this is what I've been looking for in my career - a place that is making a difference in people's lives! Your company manifesto helped me realize what I value in the workplace. I want to work with a team who is as passionate about UI/UX design as I am. A team that wants to create the best experience for the user.
+            p.large.intro I was so excited to hear about an opening for a UI/UX Designer at YNAB. Now this is what I've been looking for in my career - a place that is making a difference in people's lives! Your company manifesto helped me realize what I value in the workplace. I want to work with a team who is as passionate about UI/UX design as I am. A team that wants to create the best experience for the user.
 
     .bg-purple.about-section
       .container#about
@@ -17,17 +17,17 @@ html.home
           .row
             .col-md-8.col-md-offset-4.col-sm-8.col-sm-offset-4
               h2 About Me
-              p I was born and raised in Jacksonville, Florida and graduated from UNF in 2010. I come from a pretty large family - three brothers and three sisters. I now have my own family and together we have adopted three persian cats. We've even created an #[a(href="http://www.instagram.com/persiansrightmeow" target="_blank") instagram] documenting their lives.
+              .col-xs-6.no-padding-left.hidden-md.hidden-lg.hidden-sm
+                img.width100(src='images/angela.jpg')
+              p I was born and raised in Jacksonville, Florida and graduated from UNF in 2010. I come from a pretty large family - three brothers and three sisters. I now have my own family and together we have adopted three persian cats. We have even started an #[a(href='http://www.instagram.com/persiansrightmeow' target='_blank') instagram] account documenting their lives.
               p Along with my love for cats is my love for art and design. I learned to draw cartoons at a young age. This determination to learn and succeed carried into my adult life. I am a dedicated and hard worker because of those earlier years.
 
             .col-md-offset-4.col-sm-offset-4
               .col-md-6.col-sm-12.work-life
-                //- .border
                 h5 What I'm looking for
-                p What is most important to me is a positive team environment. Simple words of kindness go a long way. I work best when everyone on the team works well together and encourages each other. There is always room for growth no matter how talented you are.
+                p What is most important to me is a positive team environment. Simple words of kindness go a long way. I work best when everyone on the team works well together. There is always room for growth no matter how talented you are.
 
               .col-md-6.col-sm-12
-                //- .border
                 h5 Things I absolutely love
                 ul.fa-ul
                   li #[i.fa-li.fa.fa-caret-right] Traveling
@@ -37,22 +37,22 @@ html.home
                   li #[i.fa-li.fa.fa-caret-right] Coffee
                   li #[i.fa-li.fa.fa-caret-right] Cats
                   li #[i.fa-li.fa.fa-caret-right] Roadtrips
+                  li #[i.fa-li.fa.fa-caret-right] Fitness
 
     .container#featured
       .inner-content
         .row
           .col-md-12
             h2 Featured Projects
-            p.large
         .row
           .col-sm-6.col-md-4
-            a.thumbnail.hardrock(href="projects/pattern-library.html")
-              img(src="images/tPatternLibrary.jpg")
-          .col-sm-6.col-md-4.thumb
-            a.thumbnail.hardrock(href="projects/hard-rock.html")
-              img(src="images/tHardRockHotels.jpg")
+            a.thumbnail(href='projects/pattern-library.html')
+              img(src='images/tPatternLibrary.jpg')
           .col-sm-6.col-md-4
-            a.thumbnail.hardrock(href="projects/money-morning.html")
-              img(src="images/tMoneyMorning.jpg")
+            a.thumbnail(href='projects/hard-rock.html')
+              img(src='images/tHardRockHotels.jpg')
+          .col-sm-6.col-md-4
+            a.thumbnail(href='projects/money-morning.html')
+              img(src='images/tMoneyMorning.jpg')
 
     include ./footer/footer.jade
