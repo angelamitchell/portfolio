@@ -1,0 +1,58 @@
+doctype html
+include ../head/head.jade
+html
+  body
+    include ../nav/nav-interior.jade
+
+    .bg-purple
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              h1 EverBank Pattern Library
+              p.large.intro Create an internal site to house all of EverBank's patterns, styles and code
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            p: em Role: Lead Designer &amp; Front-End Designer
+            h2 Process
+            p Initially, meetings were set to discuss requirements and standards for the pattern library. The information gathered from these meetings was used to create the information architecture for the site. I printed the assets from the three websites and organized them into piles (ex: various buttons would be in one pile, calls to actions in another pile, footers in another, and so on).
+            p The printed assets helped me to organize out each section for the new pattern library. I wrote down every page or section the pattern library would have on notecards. During this whole process I collaborated with the team, set meetings and set timelines to adhere to. I was solely responsible for ensuring a timely delivery, while maintaining my other work.
+            p When the team and I felt that we were at a good place with the architecture I began developing a prototype. More meetings and collaboration took place during this time and continued through the duration of the project. At the end of the project I presented the pattern library to the whole marketing team.
+            
+            h3 The Build
+            p This project was built in GitHub using Jade, SASS and Angular 2.
+            a.project-btns.next(href="hard-rock.html") #[span.fa.fa-chevron-right]
+            a.project-btns.prev(href="csx-fmla.html") #[span.fa.fa-chevron-left] 
+
+    .bg-gray
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              h2 Process Visuals
+              p The visuals below are the notecards for the pages, information architecture and low fidelty prototype.
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' title='Notecards' href='../images/patternLibraryNotes-lg.jpg')
+                img(src='../images/patternLibraryNotes.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' title='Site Structure' href='../images/patternLibrarySitemap-lg.jpg')
+                img(src='../images/patternLibrarySitemap.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/patternLibraryWireframe-lg.jpg' title='UX Pin Wireframe')
+                img(src='../images/patternLibraryWireframe.jpg')
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            h2 Final Product
+            p Before the pattern library, the department experienced inconsistencies with their code and patterns. The pattern library made the team more efficient and improved consistency in designs.
+        .row
+          .col-md-8.col-md-offset-2
+            img.portfolio-img.width100(src='../images/pPatternLibrary.png')
+              
+    include featured-projects.jade
+    include ../footer/footer.jade

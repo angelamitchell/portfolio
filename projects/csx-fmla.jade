@@ -1,0 +1,59 @@
+doctype html
+include ../head/head.jade
+html
+  body(data-spy='scroll')
+    include ../nav/nav-interior.jade
+
+    .bg-purple
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              h1 Workforce Availability Application
+              p.large.intro Create a new application that helps track employees who misuse FMLA
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            p: em Role: Lead Designer
+            h2 Process
+            p Initally, kick off calls were scheduled to discuss the requirements for this project. From the kick off calls and meetings with the business analysts I was able to start researching and proofing out some ideas for the new application.
+            p During this project I got to work closely with the users to discuss there pain points with the current process of tracking. I found that the current process was very manual and allowed for alot of error in tracking. Everything was documented in either excel documents or emails, which allowed for mistakes to happen more frequently.
+            p I was able to create user flows based on feedback and direction provided by the users. This allowed me to understand their process a lot better.
+            p I looked to simplify and automate the application to make tracking misuse much easier. With the new application users have a dashboard view of employees who are misusing FMLA. From that screen they are able to approve or disapprove these incidents. 
+
+            a.project-btns.next(href="pattern-library.html") #[span.fa.fa-chevron-right]
+            a.project-btns.prev(href="jeans-clean-team.html")  #[span.fa.fa-chevron-left]
+
+    .bg-gray
+      .container
+        .inner-content
+          .row
+            .col-sm-12.col-md-12
+              h2 Process Visuals
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/fmlaProcess-lg.jpg' title='Early Prototype of Dashboard')
+                img(src='../images/fmlaProcess.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/fmlaDashboard-lg.jpg' title='Dashboard Prototype')
+                img(src='../images/fmlaDashboard.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/fmlaFinal-lg.jpg' title='Final Prototype designed in Axure')
+                img(src='../images/fmlaFinal.jpg')
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            h2 Final Product
+            p The new application made the process for capturing FMLA incidents easier and more automated.
+            p #[a.btn.primary.btn-lg(href='https://30u6cz.axshare.com/#g=1&p=employee_detail' target='_blank') Launch Prototype]
+
+        .row
+          .col-md-8.col-md-offset-2.text-center
+            img.portfolio-img.width100(src='../images/pFMLA.jpg')
+
+    include featured-projects.jade
+    include ../footer/footer.jade
+

@@ -1,0 +1,63 @@
+doctype html
+include ./head/head.jade
+html.home
+  body
+    include ./nav/nav.jade
+
+    .container
+      .inner-content
+        .row
+          .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+            .text-center
+              img.angela(src='images/angela.jpg')
+              h1 Angela Van&nbsp;Winkle
+              .diamond &#9830;
+            h2 Your Next Confidently Humble UX Designer
+            p.large.intro I love creating and am passionate about user experience design. Throughout my career, I’ve come to believe that design should be visually pleasing and functional to meet the needs of the user. The best solutions start with great communication, teamwork and iteration. What I value most in the workplace is a positive environment with individuals who are passionate about creating the best end product for the user.            
+            a.btn.primary.pad-right.scroll(href="#about") Get to Know Me
+            a.btn.secondary.scroll(href="#featured") View Featured Projects
+
+    .bg-purple.about-section
+      .container#about
+        .inner-content
+          .row
+            .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+              .work-life 
+                p I work best with individuals who are excited about the work they create. It is important that my team feel empowered and encouraged when working on any project.
+                p I was born and raised in Jacksonville, Florida and graduated from UNF in 2010. I come from a pretty large family - three brothers and three sisters. I now have my own family and together we have adopted three persian cats. We have even started an #[a(href='http://www.instagram.com/persiansrightmeow' target='_blank') instagram] account documenting their lives.
+                p Along with my love for cats is my love for art and design. I learned to draw cartoons at a young age. This determination to learn and succeed carried into my adult life. I am the dedicated and hard worker I am because of those earlier years.
+     
+    .container#featured
+      .inner-content
+        .row
+          .col-md-10.col-md-offset-1.col-lg-8.col-lg-offset-2
+            h2 Featured Projects
+            p I've put together a few of my favorite projects. In each project I go into more detail about my process, ideas and solutions. This is by no means a list of everything I've done, so be sure to check out my #[a(href="http://www.dribbble.com/angelacreates" target="_blank") dribbble]. Enjoy! 
+        .row
+          .col-sm-6.col-md-4
+            a.thumbnail(href='/projects/pattern-library.html')
+              img(src='../images/tPatternLibrary.jpg')
+              span.thumbnail-text
+                span EverBank Pattern Library
+          .col-sm-6.col-md-4
+            a.thumbnail(href='/projects/hard-rock.html')
+              img(src='../images/tHardRockHotels.jpg')
+              span.thumbnail-text
+                span Hard Rock Hotels
+          .col-sm-6.col-md-4
+            a.thumbnail(href='/projects/money-morning.html')
+              img(src='../images/tMoneyMorning.jpg')
+              span.thumbnail-text
+                span EverBank Landing Page
+          .col-sm-6.col-md-4
+            a.thumbnail(href='/projects/jeans-clean-team.html')
+              img(src='../images/tJeansClean.jpg')
+              span.thumbnail-text
+                span Jean's Clean Team
+          .col-sm-6.col-md-4
+            a.thumbnail(href='/projects/csx-fmla.html')
+              img(src='../images/tFMLA.jpg')
+              span.thumbnail-text
+                span CSX Workforce Availability App
+
+    include ./footer/footer.jade

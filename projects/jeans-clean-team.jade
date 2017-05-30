@@ -1,0 +1,65 @@
+doctype html
+include ../head/head.jade
+html
+  body(data-spy='scroll')
+    include ../nav/nav-interior.jade
+
+    .bg-purple
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              h1 Jean's Clean Team
+              p.large.intro Create a responsive website that promotes users to book cleaning appointments
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            p: em Role: Lead Designer &amp; Project Manager
+            h2 Process
+            p Initially, I worked directly with the client to gather requirements needed to start the project. I sent a questionnaire to the client that would provide me any details needed for the new website. Once all the requirements were discussed with the client, I started researching the cleaning industry. All research and design decisions were discussed with the client prior to prototyping.
+            p I sketched out ideas and then quickly moved into creating low fidelity prototypes. These prototypes were presented to the client. After receiving feedback and making changes on the prototype I created a moodboard to capture colors, potential imagery and design elements.
+            p Finally, the high fidelity prototypes were presented to the client. We discussed and addressed any concerns and began building the website. I collaborated with a developer to help ensure a timely delivery of the website. I also assisted with implementing the SEO and analytics for the website. Before the client had no analytics or SEO on her website. 
+            h3 The Build
+            p The site was built in wordpress using HTML, SASS, JavaScript on the Foundation framework.
+            a.project-btns.next(href="csx-fmla.html") #[span.fa.fa-chevron-right]
+            a.project-btns.prev(href="money-morning.html") #[span.fa.fa-chevron-left]
+
+    .bg-gray
+      .container
+        .inner-content
+          .row
+            .col-sm-12.col-md-12
+              h2 Process Visuals
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/jeanHome-lg.jpg' title='Homepage Prototype')
+                img(src='../images/jeanHome.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/jeanBlog-lg.jpg' title='Blog Prototype')
+                img(src='../images/jeanBlog.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/jeanMoodboard-lg.jpg' title='Moodboard')
+                img(src='../images/jeanMoodboard.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/jeanHomeComp-lg.jpg' title='High Fidelity Homepage Prototype')
+                img(src='../images/jeanHomeComp.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/jeanBlogComp-lg.jpg' title='High Fidelity Blog Prototype')
+                img(src='../images/jeanBlogComp.jpg')
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            h2 Final Product
+            p The new website makes it easier for users to access the site from their mobile device. It also allows users to quickly contact Jean to schedule cleaning appointments.
+            p #[a.btn.secondary.btn-lg(href='https://invis.io/U88QEYF4D#/217552661_CompHome' target='_blank') Launch Prototype] #[a.btn.primary.btn-lg(href='http://www.jeanscleanteam.com' target='_blank') Launch Site]
+
+        .row
+          .col-md-8.col-md-offset-2.text-center
+            img.portfolio-img.width100(src='../images/pJeansCleanTeam.jpg')
+
+    include featured-projects.jade
+    include ../footer/footer.jade
+

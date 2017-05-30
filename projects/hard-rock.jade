@@ -1,0 +1,70 @@
+doctype html
+include ../head/head.jade
+html
+  body(data-spy='scroll')
+    include ../nav/nav-interior.jade
+
+    .bg-purple
+      .container
+        .inner-content
+          .row
+            .col-md-8.col-md-offset-2
+              h1 Hard Rock Hotels
+              p.large.intro Create an interactive website to increase reservations
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            p: em Role: Lead Designer &amp; Front-End Designer
+            h2 Process
+            p Initially, meetings were set to discuss requirements, goals and timeline. I worked closely with multiple teams to discuss strategies for the new website. At the time, it was decided to have a separate mobile experience.
+            p In the beginning stages, we met with Hard Rock's team in Orlando. This helped me to really understand the brand and their goals. The most important takeaway was to increase reservations.
+            p My team and I brainstormed ideas on a white board. After working through these ideas, the team proceeded to create a moodboard. This was helpful because it set the tone for the new site. I created multiple hi-fidelity wireframes and mockups based on the information collected from the client.
+            h3 The Build
+            p From start to finish, the site took approximately six months. I used HTML, CSS, JavaScript and Json. Some highlights of the design include the interactive 'Create Your Experience' and the 'Sound of Your Stay.'
+
+            p.small *Note: Since going live the site has changed.
+            a.project-btns.next(href="money-morning.html") #[span.fa.fa-chevron-right]
+            a.project-btns.prev(href="pattern-library.html") #[span.fa.fa-chevron-left]
+
+    .bg-gray
+      .container
+        .inner-content
+          .row
+            .col-sm-12.col-md-12
+              h2 Process Visuals
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/hardRockOriginal-lg.jpg' title='Original Site')
+                img(src='../images/hardRockOriginal.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/hardRockMoodboard-lg.jpg' title='Moodboard Created by Coworker')
+                img(src='../images/hardRockMoodboard.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/hardRockHome-lg.jpg' title='Wireframe ')
+                img(src='../images/hardRockHome.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/hardRockCtas-lg.jpg' title='Wireframe of CTAs')
+                img(src='../images/hardRockCtas.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/hardRockNews-lg.jpg' title='Wireframe of News')
+                img(src='../images/hardRockNews.jpg')
+            .col-sm-6.col-md-4
+              a.thumbnail.swipebox(rel='gallery1' href='../images/hardRockNews02-lg.jpg' title='Option for News')
+                img(src='../images/hardRockNews02.jpg')   
+
+    .container
+      .inner-content
+        .row
+          .col-md-8.col-md-offset-2
+            h2 Final Product
+            p The website is more functional and interactive for their users. It is more aligned with their brand and they have seen an increase with the number of bookings each month.
+            p #[a.btn.primary.btn-lg(href='https://www.hardrockhotels.com' target='_blank') Launch Site]
+
+        .row
+          .col-md-8.col-md-offset-2.text-center
+            img.portfolio-img.width100(src='../images/pHardRockHotels.jpg')
+    
+    include featured-projects.jade
+    include ../footer/footer.jade
+

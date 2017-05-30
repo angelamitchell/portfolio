@@ -1,0 +1,48 @@
+nav {
+  &.navbar {
+    background: $dpurple;
+    border: 0;
+  }
+
+  & .navbar-nav {
+    float: none;
+
+    & > li {
+      display: inline-block;
+      float: none;
+    }
+
+  }
+
+  a {
+    color: $white;
+    font-size: 1.8rem;
+  }
+
+  .navbar-toggle {
+    border: 1px solid $dpink;
+
+    .icon-bar {
+      background: $white;
+    }
+  }
+
+
+  .nav > li > a:focus,
+  .nav > li > a:hover {
+    background: $lpurple;
+    color: $white;
+  }
+}
+
+.navbar-toggle {
+  margin-right: 20px;
+}
+
+.navbar-brand {
+  padding: 15px 20px;
+
+  &:hover {
+    color: $dpink;
+  }
+}

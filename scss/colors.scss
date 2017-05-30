@@ -1,0 +1,27 @@
+$white: rgb(255, 255, 255);
+$black: rgb(17, 22, 37);
+$gray: rgb(243, 243, 243);
+$purple: rgb(52, 25, 49);
+$lpurple: rgb(87, 27, 60);
+$dpurple: rgb(29, 14, 27);
+$dpink: rgb(87, 27, 60);
+$lpink: rgb(222, 121, 163);
+$pink: rgb(122, 30, 72);
+
+.bg-black {
+  background: $black;
+}
+
+.bg-purple {
+  background: $purple;
+  color: $white;
+}
+
+.bg-dark-purple {
+  background: $dpurple;
+  color: $white;
+}
+
+.bg-gray {
+  background: $gray;
+}
